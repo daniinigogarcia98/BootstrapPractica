@@ -53,28 +53,23 @@
     <main>
         <div class="bg-light p-4 rounded-3">
             <h1 class="text-center mb-4">Formulario de Registro</h1>
-            <form id="registroForm">
-              <!-- Nombre y Apellidos -->
+            
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="nombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" required placeholder="Introduce tu nombre" data-bs-toggle="tooltip" title="Tu nombre completo">
+                  
+                  <input type="text" class="form-control" id="nombre" required placeholder="Nombre" data-bs-toggle="tooltip" title="Tu nombre completo">
                 </div>
                 <div class="col-md-6">
-                  <label for="apellidos" class="form-label">Apellidos</label>
-                  <input type="text" class="form-control" id="apellidos" required placeholder="Introduce tus apellidos" data-bs-toggle="tooltip" title="Tus apellidos completos">
+                  <input type="text" class="form-control" id="apellidos" required placeholder="Apellidos" data-bs-toggle="tooltip" title="Tus apellidos completos">
                 </div>
               </div>
     
-              <!-- Email y Teléfono -->
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Introduce tu email" required data-bs-toggle="tooltip" title="Email para notificaciones">
+                  <input type="email" class="form-control" id="email" placeholder="Correo Electŕonico" required data-bs-toggle="tooltip" title="Email para notificaciones">
                 </div>
                 <div class="col-md-6">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu teléfono" required data-bs-toggle="tooltip" title="Número de contacto">
+                  <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required data-bs-toggle="tooltip" title="Número de contacto">
                 </div>
               </div>
     
@@ -87,20 +82,10 @@
                   <option value="corporativo">Corporativo</option>
                 </select>
               </div>
-    
-              <!-- Comunidad Autónoma -->
               <div class="mb-3">
-                <label for="comunidadAutonoma" class="form-label">Comunidad Autónoma</label>
-                <input list="comunidades" class="form-control" id="comunidadAutonoma" required />
-                <datalist id="comunidades">
-                  <option value="Andalucía">
-                  <option value="Cataluña">
-                  <option value="Madrid">
-                  <option value="Valencia">
-                </datalist>
+                <input list="comunidades" class="form-control" id="comunidadAutonoma" placeholder="Comunidad Autónoma" required />
               </div>
     
-              <!-- Código de referido -->
               <div class="mb-3">
                 <label for="codigoReferido" class="form-label">Código de Referido</label>
                 <div class="input-group">
