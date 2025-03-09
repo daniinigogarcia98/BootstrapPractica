@@ -90,36 +90,47 @@
           </h1>
           <form class="row g-3" id="registroForm">
             <div class="col-12 col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Nombre"
-                title="Ingresa tu nombre"
-              />
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre"
+                  title="Ingresa tu nombre"
+                />
+                <label for="nombre">Nombre</label>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="apellidos"
-                placeholder="Apellidos"
-                title="Ingresa tus apellidos"
-              />
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidos"
+                  placeholder="Apellidos"
+                  title="Ingresa tus apellidos"
+                />
+                <label for="apellidos">Apellidos</label>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Correo electrónico"
-                title="Ingresa tu correo"
-              />
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Correo electrónico"
+                  title="Ingresa tu correo"
+                />
+                <label for="email">Correo electrónico</label>
+              </div>
             </div>
+
+            <!-- Campo Tipo de usuario sin label -->
             <div class="col-12 col-md-6">
               <select
                 id="tipoUsuario"
-                class="form-select"
+                class="form-control py-3"
                 title="Ingresa tipo de usuario"
               >
                 <option value="">Seleccione tipo de usuario</option>
@@ -128,10 +139,12 @@
                 <option value="corporativo">Corporativo</option>
               </select>
             </div>
+
+            <!-- Campo Comunidad Autónoma sin label -->
             <div class="col-12 col-md-6">
               <select
                 id="comunidadAutonoma"
-                class="form-select"
+                class="form-control py-3"
                 title="Ingresa tu Comunidad Autónoma"
               >
                 <option value="">Seleccione Comunidad Autónoma</option>
@@ -142,12 +155,14 @@
                 <option value="Extremadura">Extremadura</option>
               </select>
             </div>
+
+            <!-- Campo Código de referido sin label -->
             <div class="col-12 col-md-6">
               <div class="input-group">
                 <input
                   type="text"
                   id="codigoReferido"
-                  class="form-control"
+                  class="form-control py-3"
                   placeholder="Código de referido"
                   title="Ingresa el código referido si tienes uno"
                 />
