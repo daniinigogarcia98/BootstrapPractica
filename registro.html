@@ -17,11 +17,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Toastr CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -88,15 +83,13 @@
     <main class="mt-5 pt-5">
       <div class="container-md mb-5">
         <div class="card shadow-lg p-4">
-          <!-- Título dentro del formulario -->
           <h1
             class="p-3 mb-4 bg-success bg-gradient text-white shadow-sm text-center"
           >
             Formulario de Registro
           </h1>
           <form class="row g-3" id="registroForm">
-            <!-- Nombre -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -105,9 +98,7 @@
                 title="Ingresa tu nombre"
               />
             </div>
-
-            <!-- Apellidos -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -116,9 +107,7 @@
                 title="Ingresa tus apellidos"
               />
             </div>
-
-            <!-- eMail -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <input
                 type="email"
                 class="form-control"
@@ -127,9 +116,7 @@
                 title="Ingresa tu correo"
               />
             </div>
-
-            <!-- Tipo de Usuario -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <select
                 id="tipoUsuario"
                 class="form-select"
@@ -141,12 +128,10 @@
                 <option value="corporativo">Corporativo</option>
               </select>
             </div>
-
-            <!-- Comunidad Autónoma -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <select
-                class="form-select"
                 id="comunidadAutonoma"
+                class="form-select"
                 title="Ingresa tu Comunidad Autónoma"
               >
                 <option value="">Seleccione Comunidad Autónoma</option>
@@ -157,9 +142,7 @@
                 <option value="Extremadura">Extremadura</option>
               </select>
             </div>
-
-            <!-- Código de referido -->
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-md-6">
               <div class="input-group">
                 <input
                   type="text"
@@ -178,104 +161,100 @@
               </div>
             </div>
 
-            <!-- Intereses en lista -->
-            <div class="col-12 col-sm-6 col-lg-4">
-              <legend>Intereses</legend>
-              <ul class="list-unstyled">
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="interesTecnologia"
-                  />
-                  <label for="interesTecnologia">Tecnología</label>
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="interesNegocios"
-                  />
-                  <label for="interesNegocios">Negocios</label>
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="interesDiseno"
-                  />
-                  <label for="interesDiseno">Diseño</label>
-                </li>
-              </ul>
+            <div class="col-12 col-md-4">
+              <fieldset>
+                <legend>Intereses</legend>
+                <ul class="list-unstyled">
+                  <li>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="interesTecnologia"
+                    />
+                    <label for="interesTecnologia">Tecnología</label>
+                  </li>
+                  <li>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="interesNegocios"
+                    />
+                    <label for="interesNegocios">Negocios</label>
+                  </li>
+                  <li>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="interesDiseno"
+                    />
+                    <label for="interesDiseno">Diseño</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
 
-            <!-- Plan de Suscripción -->
-            <div class="col-12 col-sm-6 col-lg-4">
-              <legend>Plan de Suscripción</legend>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="plan"
-                  id="planBasico"
-                  value="basico"
-                />
-                <label class="form-check-label" for="planBasico">
-                  Plan Básico
-                  <i
-                    class="bi bi-question-circle ms-2"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Plan con funciones limitadas"
-                  ></i>
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="plan"
-                  id="planPremium"
-                  value="premium"
-                />
-                <label class="form-check-label" for="planPremium">
-                  Plan Premium
-                  <i
-                    class="bi bi-question-circle ms-2"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Plan con todas las funciones premium"
-                  ></i>
-                </label>
-              </div>
+            <div class="col-12 col-md-4">
+              <fieldset>
+                <legend>Plan de Suscripción</legend>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="plan"
+                    id="planBasico"
+                    value="basico"
+                  />
+                  <label class="form-check-label" for="planBasico">
+                    Plan Básico
+                    <i
+                      class="bi bi-question-circle ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Plan con funciones limitadas"
+                    ></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="plan"
+                    id="planPremium"
+                    value="premium"
+                  />
+                  <label class="form-check-label" for="planPremium">
+                    Plan Premium
+                    <i
+                      class="bi bi-question-circle ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Plan con todas las funciones premium"
+                    ></i>
+                  </label>
+                </div>
+              </fieldset>
             </div>
 
-            <!-- Tema -->
-            <div class="col-md-4 d-flex align-items-center">
+            <div class="col-12 col-md-4 d-flex align-items-center">
               <label for="temaColor" class="me-2">Tema:</label>
               <input
                 type="color"
                 id="temaColor"
                 class="form-control form-control-color me-2"
               />
-              <span id="colorValor" class="fw-bold" style="color: #000000"
-                >#000000</span
-              >
+              <span id="colorValor" class="fw-bold"><strong>#000000</strong></span>
             </div>
 
-            <!-- Botón de registro -->
             <div class="col-12 text-center">
               <button type="submit" class="btn btn-primary btn-lg shadow-sm">
                 Registrarse
               </button>
-              <div id="descuentoMensaje" class="mt-3"></div>
             </div>
+            <div id="descuentoMensaje" class="mt-3"></div>
           </form>
         </div>
       </div>
     </main>
-
-    <!-- Toasts de Bootstrap -->
     <div
       id="toastContainer"
       class="position-fixed top-0 end-0 p-3"
@@ -301,9 +280,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body" id="modalResultadoMensaje">
-            <!-- Aquí se mostrará el mensaje -->
-          </div>
+          <div class="modal-body" id="modalResultadoMensaje"></div>
           <div class="modal-footer">
             <button
               type="button"
@@ -318,7 +295,147 @@
     </div>
     <!-- Bootstrap JavaScript Libraries desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/formularioJQuery.js"></script>
+    <!-- jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#temaColor").on("input", function () {
+          var color = $(this).val();
+          $("#colorValor").text(color).css("font-family", "monospace");
+        });
+        $("#temaColor").on("input", function () {
+          var colorSeleccionado = $(this).val();
+          $("#colorValor")
+            .text(colorSeleccionado)
+            .css("color", colorSeleccionado);
+        });
+        $.ajax({
+          url: "/json/codigos.json",
+          dataType: "json",
+          success: function (codigosDescuento) {
+            $("#btnAplicarCodigo").on("click", function () {
+              var codigo = $("#codigoReferido").val();
+              var codigoValido = codigosDescuento.find(function (item) {
+                return item.codigo === codigo;
+              });
+
+              if (!codigoValido) {
+                var toastError = $(
+                  '<div class="toast align-items-center text-bg-danger border-0 my-2" role="alert" aria-live="assertive" aria-atomic="true"><div class="d-flex"><div class="toast-body p-3">Código de descuento no válido.</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div></div>'
+                );
+                $("#toastContainer").append(toastError);
+                toastError.toast("show");
+                $("#descuentoMensaje").empty();
+              } else {
+                var descuentoMensaje = `Tu descuento es: ${codigoValido.descuento}`;
+
+                $("#descuentoMensaje")
+                  .text(descuentoMensaje)
+                  .addClass("alert alert-success rounded text-start");
+
+                var toastSuccess = $(
+                  `<div class="toast align-items-center text-bg-success border-0 my-2" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div class="toast-body p-3">${descuentoMensaje}</div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+              </div>`
+                );
+                $("#toastContainer").append(toastSuccess);
+                toastSuccess.toast("show");
+
+                $("#btnAplicarCodigo").prop("disabled", true).text("Aplicado");
+              }
+            });
+          },
+          error: function () {
+            alert("Error al cargar los códigos de descuento.");
+          },
+        });
+
+        $("[title]").tooltip();
+
+        $("#registroForm").on("submit", function (e) {
+          e.preventDefault();
+          var camposVacios = false;
+          var toastMessages = [];
+
+          $("input, select").each(function () {
+            if ($(this).val() === "" && $(this).is(":visible")) {
+              camposVacios = true;
+              $(this).css("background-color", "#f8d7da");
+            } else {
+              $(this).css("background-color", "");
+            }
+          });
+
+          if (
+            !$("#interesTecnologia").prop("checked") &&
+            !$("#interesNegocios").prop("checked") &&
+            !$("#interesDiseno").prop("checked")
+          ) {
+            toastMessages.push("Por favor, seleccione al menos un interés.");
+          }
+
+          if (!$('input[name="plan"]:checked').val()) {
+            toastMessages.push("Por favor, seleccione un plan de suscripción.");
+          }
+
+          if (camposVacios) {
+            toastMessages.push(
+              "Por favor, complete todos los campos obligatorios."
+            );
+          }
+
+          if (toastMessages.length > 0) {
+            toastMessages.forEach(function (msg) {
+              var toastError = $(
+                '<div class="toast align-items-center text-bg-danger border-0 my-2" role="alert" aria-live="assertive" aria-atomic="true"><div class="d-flex"><div class="toast-body p-3">' +
+                  msg +
+                  '</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div></div>'
+              );
+              $("#toastContainer").append(toastError);
+              toastError.toast("show");
+            });
+            return;
+          }
+
+          $.ajax({
+            url: "/json/registro.json",
+            method: "GET",
+            data: $("#registroForm"),
+            success: function (response) {
+              if (response.error === 0) {
+                var modalMessage = `
+            <div class="alert " role="alert">
+            <p>El registro se ha realizado correctamente.</p>
+            </div>
+           `;
+                $("#modalResultadoMensaje").html(modalMessage);
+                $("#modalResultado").modal("show");
+              } else {
+                var modalMessageError = `
+                <div class="alert alert-danger" role="alert">
+                <p>${response.error_msg}</p>
+                </div>
+                `;
+                $("#modalResultadoMensaje").html(modalMessageError);
+                $("#modalResultado").modal("show");
+              }
+            },
+            error: function () {
+              var modalMessageError = `
+              <div class="alert alert-danger" role="alert">
+              <h4 class="alert-heading">Error al procesar el registro</h4>
+              <p>Hubo un problema al intentar registrar tus datos.</p>
+              </div>
+              `;
+              $("#modalResultadoMensaje").html(modalMessageError);
+              $("#modalResultado").modal("show");
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>
